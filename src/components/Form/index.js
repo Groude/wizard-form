@@ -8,24 +8,13 @@ import { constants, stepOneInitial, stepTwoInitial, stepThreeInitial, stepsObjec
 
 class Form extends React.Component {
   state = {
-    step: 4,
+    step: 1,
     error: false,
     buttonDisabled: true,
     stepOne: stepOneInitial,
     stepTwo: stepTwoInitial,
     stepThree: stepThreeInitial,
-    finish: {firstName: 'Кирилл',
-    lastName: 'Мартынов',
-    middleName: 'Анатольевич',
-    mail: 'thekirchik@gmail.com',
-    phone: '+79787294863',
-    birth: '15.02.1995',
-    gender: 'Мужчина',
-    city: 'Симферополь',
-    id: '3123213',
-    location: 'Отдел УФМС России по Республике Крым в Центральнорм Районе г. Симферополя',
-    departmentCode: '910-002',
-    dateId: '17.06.2015'}
+    finish: {}
   };
 
   getValue = (event) => {
